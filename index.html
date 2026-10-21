@@ -19,7 +19,32 @@
     <button type="button" onclick="ded()">/</button>
     <p id="result"></p>
 
+    
+    <br>
+    <hr>
+    <h1>Rritja dhe zbrijta e nje nurmi</h1>
+    <p id=numri>0</p>
+    
+    <button type="submit" onlick="rritje">++</button>
+    <button type="submit" onlick="zbritje">--</button>
+    
     <script>
+        var n=0;
+        funcction=rritje()
+        {
+            n=n+1;
+            document.GetElementById('numri').innerHTML=n:
+        }
+
+           funcction=zbritje()
+        {
+            n=n-1;
+            document.GetElementById('numri').innerHTML=n:
+        }
+
+
+
+        
         function sum()
         {
             var a = Number(document.getElementById('nr1').value);

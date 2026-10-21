@@ -15,7 +15,8 @@
 
     <button type="button" onclick="sum()">+</button>
     <button type="button" onclick="lum()">-</button>
-
+    <button type="button" onclick="times()">*</button>
+    <button type="button" onclick="ded()">/</button>
     <p id="result"></p>
 
     <script>
@@ -32,6 +33,20 @@
             var a = Number(document.getElementById('nr1').value);
             var b = Number(document.getElementById('nr2').value);
             var c = a - b;
+            document.getElementById('result').innerHTML = c;
+        }
+         function times()
+        {
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+            var c = a * b;
+            document.getElementById('result').innerHTML = c;
+        }
+          function ded()
+        {
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+            var c = a / b;
             document.getElementById('result').innerHTML = c;
         }
     </script>
